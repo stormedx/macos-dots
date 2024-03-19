@@ -1,0 +1,36 @@
+yabai -m config layout bsp
+
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
+
+
+# mouse settings
+
+yabai -m config mouse_follows_focus on
+
+yabai -m config mouse_modifier alt
+# left click + drag
+yabai -m config mouse_action1 move
+# right click + drag
+yabai -m config mouse_action2 resize
+
+yabai -m mouse_drop _action swap
+
+# Disable specific apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^News$" manage=off
+yabai -m rule --add app="^Parallels Desktop$" manage=off
+yabai -m rule --add app="^Adobe Photoshop 2023$" manage=off
+yabai -m rule --add app="^Adobe InDesign 2022$" manage=off
+yabai -m rule --add app="^Adobe Illustrator 2023$" manage=off
+yabai -m rule --add app="^Dolphin$" manage=off
+yabai -m rule --add app="^VMWare Fusion$" manage=off
+yabai -m rule --add app="^CrossOver$" manage=off
+
