@@ -250,8 +250,10 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# My own custom aliases :^)
 alias clones='cd ~/Documents/github-clones'
 alias projects='cd ~/Documents/local-projects'
+alias weather='curl https://wttr.in/'
 
 # Created by `pipx` on 2024-02-13 13:21:41
 export PATH="$PATH:/Users/stormed/.local/bin"
