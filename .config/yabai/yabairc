@@ -28,22 +28,25 @@ yabai -m config mouse_action2 resize
 yabai -m mouse_drop _action swap
 
 # Disable specific apps, aka float windows.
-yabai -m rule --add app=Finder manage=off
-yabai -m rule --add app=VLC manage=off
-yabai -m rule --add app=System Preferences manage=off
-yabai -m rule --add app=Calculator manage=off
-yabai -m rule --add app=News manage=off
-yabai -m rule --add app=Parallels Desktop manage=off
-yabai -m rule --add app=Adobe Photoshop 2023 manage=off
-yabai -m rule --add app=Adobe InDesign 2022 manage=off
-yabai -m rule --add app=Adobe Illustrator 2023 manage=off
-yabai -m rule --add app=Dolphin manage=off
-yabai -m rule --add app=VMWare Fusion manage=off
-yabai -m rule --add app=CrossOver manage=off
-yabai -m rule --add app=Github Desktop manage=off
-yabai -m rule --add app=Bitwarden manage=off
-yabai -m rule --add app=Xcode manage=off
-yabai -m rule --add app=Docker Desktop manage=off
-yabai -m rule --add app=Clock manage=off
-yabai -m rule --add app=Messages manage=off
-yabai -m rule --add app=Weather manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^VLC$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^News$" manage=off
+yabai -m rule --add app="^Parallels Desktop$" manage=off
+yabai -m rule --add app="^Adobe Photoshop 2023$" manage=off
+yabai -m rule --add app="^Adobe InDesign 2022$" manage=off
+yabai -m rule --add app="^Adobe Illustrator 2023$" manage=off
+yabai -m rule --add app="^Dolphin$" manage=off
+yabai -m rule --add app="^VMWare Fusion$" manage=off
+yabai -m rule --add app="^CrossOver$" manage=off
+yabai -m rule --add app="^Github Desktop$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+yabai -m rule --add app="^Xcode$" manage=off
+yabai -m rule --add app="^Docker Desktop$" manage=off
+yabai -m rule --add app="^Clock$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^Weather$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Mail$" manage=off
+yabai -m rule --add app="^Home$" manage=off
