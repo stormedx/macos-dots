@@ -1,8 +1,11 @@
+# Open iTerm2
+alt - return : open -a /Applications/iTerm.app
+
 # Changing window focus
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
+ alt - j : yabai -m window --focus south
+ alt - k : yabai -m window --focus north
+ alt - h : yabai -m window --focus west
+ alt - l : yabai -m window --focus east
 
 # Alt window focus
 cmd - j : yabai -m window --focus south
@@ -29,10 +32,22 @@ cmd + shift - l : yabai -m window --resize right:50:0; \
                   yabai -m window --resize left:50:0
 
 # Swap windows
-shift + alt - h : yabai -m window --swap west
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - l : yabai -m window --swap east
+ shift + alt - h : yabai -m window --swap west
+ shift + alt - j : yabai -m window --swap south
+ shift + alt - k : yabai -m window --swap north
+ shift + alt - l : yabai -m window --swap east
+
+# Move windows
+shift + ctrl - h : yabai -m window --warp west
+shift + ctrl - j : yabai -m window --warp south
+shift + ctrl - k : yabai -m window --warp north
+shift + ctrl - l : yabai -m window --warp east
+
+# Vertical/Horizontal split
+cmd + ctrl - k : yabai -m window --toggle split
+
+# Toggle float mode
+ctrl - return : yabai -m window --toggle float
 
 # Move focus window to different desktop
 
@@ -44,3 +59,14 @@ ctrl - 4 : yabai -m window --space 4; yabai -m space --focus 4
 # toggle window fullscreen zoom
 cmd + shift - return : yabai -m window --focus mouse && \
           yabai -m window --toggle zoom-fullscreen
+
+# Make floating window fill screen
+ctrl - return : yabai -m window --grid 1:1:0:0:1:1
+
+# Make floating window fill left-half of screen
+shift + ctrl - h : yabai -m window --grid 1:2:0:0:1:1
+
+# Make floating window fill right-half of screen
+shift + ctrl - l : yabai -m window --grid 1:2:1:0:1:1
+
+
